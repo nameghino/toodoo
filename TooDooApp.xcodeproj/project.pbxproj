@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		350A37CB19BB851400256036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350A37CA19BB851400256036 /* AppDelegate.swift */; };
+		350A37CE19BB851400256036 /* TooDooApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 350A37CC19BB851400256036 /* TooDooApp.xcdatamodeld */; };
+		350A37D019BB851400256036 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350A37CF19BB851400256036 /* Images.xcassets */; };
+		350A37DC19BB851400256036 /* TooDooAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350A37DB19BB851400256036 /* TooDooAppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		350A37D619BB851400256036 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 350A37BD19BB851400256036 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 350A37C419BB851400256036;
+			remoteInfo = TooDooApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		350A37C519BB851400256036 /* TooDooApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TooDooApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		350A37C919BB851400256036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		350A37CA19BB851400256036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		350A37CD19BB851400256036 /* TooDooApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TooDooApp.xcdatamodel; sourceTree = "<group>"; };
+		350A37CF19BB851400256036 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		350A37D519BB851400256036 /* TooDooAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TooDooAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		350A37DA19BB851400256036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		350A37DB19BB851400256036 /* TooDooAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooDooAppTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		350A37C219BB851400256036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		350A37D219BB851400256036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		350A37BC19BB851400256036 = {
+			isa = PBXGroup;
+			children = (
+				350A37C719BB851400256036 /* TooDooApp */,
+				350A37D819BB851400256036 /* TooDooAppTests */,
+				350A37C619BB851400256036 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		350A37C619BB851400256036 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				350A37C519BB851400256036 /* TooDooApp.app */,
+				350A37D519BB851400256036 /* TooDooAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		350A37C719BB851400256036 /* TooDooApp */ = {
+			isa = PBXGroup;
+			children = (
+				350A37CA19BB851400256036 /* AppDelegate.swift */,
+				350A37CF19BB851400256036 /* Images.xcassets */,
+				350A37CC19BB851400256036 /* TooDooApp.xcdatamodeld */,
+				350A37C819BB851400256036 /* Supporting Files */,
+			);
+			path = TooDooApp;
+			sourceTree = "<group>";
+		};
+		350A37C819BB851400256036 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				350A37C919BB851400256036 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		350A37D819BB851400256036 /* TooDooAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				350A37DB19BB851400256036 /* TooDooAppTests.swift */,
+				350A37D919BB851400256036 /* Supporting Files */,
+			);
+			path = TooDooAppTests;
+			sourceTree = "<group>";
+		};
+		350A37D919BB851400256036 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				350A37DA19BB851400256036 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		350A37C419BB851400256036 /* TooDooApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 350A37DF19BB851400256036 /* Build configuration list for PBXNativeTarget "TooDooApp" */;
+			buildPhases = (
+				350A37C119BB851400256036 /* Sources */,
+				350A37C219BB851400256036 /* Frameworks */,
+				350A37C319BB851400256036 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TooDooApp;
+			productName = TooDooApp;
+			productReference = 350A37C519BB851400256036 /* TooDooApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		350A37D419BB851400256036 /* TooDooAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 350A37E219BB851400256036 /* Build configuration list for PBXNativeTarget "TooDooAppTests" */;
+			buildPhases = (
+				350A37D119BB851400256036 /* Sources */,
+				350A37D219BB851400256036 /* Frameworks */,
+				350A37D319BB851400256036 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				350A37D719BB851400256036 /* PBXTargetDependency */,
+			);
+			name = TooDooAppTests;
+			productName = TooDooAppTests;
+			productReference = 350A37D519BB851400256036 /* TooDooAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		350A37BD19BB851400256036 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Nicolas Ameghino";
+				TargetAttributes = {
+					350A37C419BB851400256036 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					350A37D419BB851400256036 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 350A37C419BB851400256036;
+					};
+				};
+			};
+			buildConfigurationList = 350A37C019BB851400256036 /* Build configuration list for PBXProject "TooDooApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 350A37BC19BB851400256036;
+			productRefGroup = 350A37C619BB851400256036 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				350A37C419BB851400256036 /* TooDooApp */,
+				350A37D419BB851400256036 /* TooDooAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		350A37C319BB851400256036 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350A37D019BB851400256036 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		350A37D319BB851400256036 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		350A37C119BB851400256036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350A37CB19BB851400256036 /* AppDelegate.swift in Sources */,
+				350A37CE19BB851400256036 /* TooDooApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		350A37D119BB851400256036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350A37DC19BB851400256036 /* TooDooAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		350A37D719BB851400256036 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 350A37C419BB851400256036 /* TooDooApp */;
+			targetProxy = 350A37D619BB851400256036 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		350A37DD19BB851400256036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		350A37DE19BB851400256036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		350A37E019BB851400256036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = TooDooApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		350A37E119BB851400256036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = TooDooApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		350A37E319BB851400256036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TooDooAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TooDooApp.app/TooDooApp";
+			};
+			name = Debug;
+		};
+		350A37E419BB851400256036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TooDooAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TooDooApp.app/TooDooApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		350A37C019BB851400256036 /* Build configuration list for PBXProject "TooDooApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350A37DD19BB851400256036 /* Debug */,
+				350A37DE19BB851400256036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		350A37DF19BB851400256036 /* Build configuration list for PBXNativeTarget "TooDooApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350A37E019BB851400256036 /* Debug */,
+				350A37E119BB851400256036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		350A37E219BB851400256036 /* Build configuration list for PBXNativeTarget "TooDooAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350A37E319BB851400256036 /* Debug */,
+				350A37E419BB851400256036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		350A37CC19BB851400256036 /* TooDooApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				350A37CD19BB851400256036 /* TooDooApp.xcdatamodel */,
+			);
+			currentVersion = 350A37CD19BB851400256036 /* TooDooApp.xcdatamodel */;
+			path = TooDooApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 350A37BD19BB851400256036 /* Project object */;
+}
