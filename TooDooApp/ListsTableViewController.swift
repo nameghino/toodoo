@@ -34,7 +34,7 @@ class ListsTableViewController: UITableViewController {
             NSLog("Error inserting entity: \(error.localizedDescription)")
         }
         return list
-    }()
+        }()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         moc = ((UIApplication.sharedApplication().delegate as AppDelegate?)?.managedObjectContext)!
@@ -59,6 +59,7 @@ class ListsTableViewController: UITableViewController {
     
     // MARK: - Actions
     func addItem(sender: AnyObject) {
+        let targetIndexPath = NSIndexPath(forRow: self.selectedList.items.count, inSection: 0)
         let item = NSEntityDescription.insertNewObjectForEntityForName("ToDoItem", inManagedObjectContext: self.moc) as ToDoItem
         item.content = "Inserted item \(unsafeBitCast(item, Int.self))"
         let days = Double(arc4random()) / Double(UInt32.max) * 1.0 / 24.0
@@ -72,7 +73,11 @@ class ListsTableViewController: UITableViewController {
             NSLog("error saving item: \(error.localizedDescription)")
         }
         
-        self.tableView.reloadData()
+        dispatch_async(dispatch_get_main_queue()) {
+            self.tableView.beginUpdates()
+            self.tableView.insertRowsAtIndexPaths([targetIndexPath], withRowAnimation: .Automatic)
+            self.tableView.endUpdates()
+        }
     }
     
     // MARK: - Helpers
@@ -105,5 +110,28 @@ class ListsTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         return "\(self.selectedList.items.count) items on your list"
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        switch editingStyle {
+        case .Delete:
+            let item = self.selectedList.items[indexPath.row] as ToDoItem
+            var set = NSMutableOrderedSet(orderedSet: self.selectedList.items)
+            set.removeObject(item)
+            self.selectedList.items = set
+            var errorPointer: NSError?
+            self.moc.save(&errorPointer)
+            if let error = errorPointer {
+                NSLog("error saving: \(error.localizedDescription)")
+            }
+            
+            self.tableView.beginUpdates()
+            self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            self.tableView.endUpdates()
+            
+            
+        default:
+            NSLog(":(")
+        }
     }
 }
