@@ -11,6 +11,10 @@
 		350A37CE19BB851400256036 /* TooDooApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 350A37CC19BB851400256036 /* TooDooApp.xcdatamodeld */; };
 		350A37D019BB851400256036 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350A37CF19BB851400256036 /* Images.xcassets */; };
 		350A37DC19BB851400256036 /* TooDooAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350A37DB19BB851400256036 /* TooDooAppTests.swift */; };
+		357E914D19BBAE86003E6223 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357E914C19BBAE86003E6223 /* ToDoItem.swift */; };
+		357E914F19BBAE86003E6223 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357E914E19BBAE86003E6223 /* ToDoList.swift */; };
+		357E915119BD206A003E6223 /* ListsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357E915019BD206A003E6223 /* ListsTableViewController.swift */; };
+		357E915319BD2B87003E6223 /* ToDoItem-Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357E915219BD2B87003E6223 /* ToDoItem-Human.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,10 @@
 		350A37D519BB851400256036 /* TooDooAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TooDooAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		350A37DA19BB851400256036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		350A37DB19BB851400256036 /* TooDooAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooDooAppTests.swift; sourceTree = "<group>"; };
+		357E914C19BBAE86003E6223 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		357E914E19BBAE86003E6223 /* ToDoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
+		357E915019BD206A003E6223 /* ListsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsTableViewController.swift; sourceTree = "<group>"; };
+		357E915219BD2B87003E6223 /* ToDoItem-Human.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToDoItem-Human.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +81,14 @@
 		350A37C719BB851400256036 /* TooDooApp */ = {
 			isa = PBXGroup;
 			children = (
+				357E914E19BBAE86003E6223 /* ToDoList.swift */,
+				357E914C19BBAE86003E6223 /* ToDoItem.swift */,
 				350A37CA19BB851400256036 /* AppDelegate.swift */,
 				350A37CF19BB851400256036 /* Images.xcassets */,
 				350A37CC19BB851400256036 /* TooDooApp.xcdatamodeld */,
 				350A37C819BB851400256036 /* Supporting Files */,
+				357E915019BD206A003E6223 /* ListsTableViewController.swift */,
+				357E915219BD2B87003E6223 /* ToDoItem-Human.swift */,
 			);
 			path = TooDooApp;
 			sourceTree = "<group>";
@@ -204,7 +216,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				350A37CB19BB851400256036 /* AppDelegate.swift in Sources */,
+				357E915119BD206A003E6223 /* ListsTableViewController.swift in Sources */,
+				357E915319BD2B87003E6223 /* ToDoItem-Human.swift in Sources */,
 				350A37CE19BB851400256036 /* TooDooApp.xcdatamodeld in Sources */,
+				357E914D19BBAE86003E6223 /* ToDoItem.swift in Sources */,
+				357E914F19BBAE86003E6223 /* ToDoList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,9 +325,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TooDooApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -320,6 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TooDooApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,6 +398,7 @@
 				350A37E119BB851400256036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		350A37E219BB851400256036 /* Build configuration list for PBXNativeTarget "TooDooAppTests" */ = {
 			isa = XCConfigurationList;
@@ -387,6 +407,7 @@
 				350A37E419BB851400256036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
