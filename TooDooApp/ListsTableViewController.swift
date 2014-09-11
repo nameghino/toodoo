@@ -119,6 +119,7 @@ class ListsTableViewController: UITableViewController {
             var set = NSMutableOrderedSet(orderedSet: self.selectedList.items)
             set.removeObject(item)
             self.selectedList.items = set
+            moc.deleteObject(item)
             var errorPointer: NSError?
             self.moc.save(&errorPointer)
             if let error = errorPointer {

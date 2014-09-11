@@ -15,6 +15,7 @@
 		357E914F19BBAE86003E6223 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357E914E19BBAE86003E6223 /* ToDoList.swift */; };
 		357E915119BD206A003E6223 /* ListsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357E915019BD206A003E6223 /* ListsTableViewController.swift */; };
 		357E915319BD2B87003E6223 /* ToDoItem-Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357E915219BD2B87003E6223 /* ToDoItem-Human.swift */; };
+		35AF829019C13C7A00FC6319 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35AF828F19C13C7A00FC6319 /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		357E914E19BBAE86003E6223 /* ToDoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
 		357E915019BD206A003E6223 /* ListsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsTableViewController.swift; sourceTree = "<group>"; };
 		357E915219BD2B87003E6223 /* ToDoItem-Human.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToDoItem-Human.swift"; sourceTree = "<group>"; };
+		35AF828F19C13C7A00FC6319 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35AF829019C13C7A00FC6319 /* Accounts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		350A37BC19BB851400256036 = {
 			isa = PBXGroup;
 			children = (
+				35AF828F19C13C7A00FC6319 /* Accounts.framework */,
 				350A37C719BB851400256036 /* TooDooApp */,
 				350A37D819BB851400256036 /* TooDooAppTests */,
 				350A37C619BB851400256036 /* Products */,
