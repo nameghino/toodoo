@@ -60,25 +60,42 @@ class ListsTableViewController: UITableViewController {
     
     // MARK: - Actions
     func addItem(sender: AnyObject) {
+        // where the new item will be inserted on the list
         let targetIndexPath = NSIndexPath(forRow: self.selectedList.items.count, inSection: 0)
+        
+        // create a new model object
         let item = NSEntityDescription.insertNewObjectForEntityForName("ToDoItem", inManagedObjectContext: self.moc) as ToDoItem
+        
+        // fill in the properties
         item.content = "Inserted item \(unsafeBitCast(item, Int.self))"
         let days = Double(arc4random()) / Double(UInt32.max) * 1.0 / 24.0
         item.dueDate = NSDate(timeIntervalSinceNow: 86400 * days)
         item.createdOn = NSDate()
+        
+        // assign the new item to the list
         item.list = self.selectedList
         
+        // save the new object into the context
         var errorPointer: NSError?
         self.moc.save(&errorPointer)
         if let error = errorPointer {
             NSLog("error saving item: \(error.localizedDescription)")
         }
         
+        // update the table view by animating the new row in
+        // must be done on main thread
         dispatch_async(dispatch_get_main_queue()) {
             self.tableView.beginUpdates()
             self.tableView.insertRowsAtIndexPaths([targetIndexPath], withRowAnimation: .Automatic)
             self.tableView.endUpdates()
         }
+        
+        /*
+        // to push a new view controller, you do this
+        let newViewController = NewViewController()
+        self.navigationController?.pushViewController(newViewController, animated: true)
+        */
+        
     }
     
     // MARK: - Helpers
