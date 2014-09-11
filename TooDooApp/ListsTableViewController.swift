@@ -11,6 +11,7 @@ import CoreData
 
 class ListsTableViewController: UITableViewController {
     let moc: NSManagedObjectContext
+    
     lazy var selectedList: ToDoList = {
         let entity = NSEntityDescription.entityForName("ToDoList", inManagedObjectContext: self.moc)
         let request = NSFetchRequest()
@@ -90,6 +91,20 @@ class ListsTableViewController: UITableViewController {
     }
     
     // MARK: - Table view data source
+    
+    /*
+    func play() {
+        let sectionCount = self.numberOfSectionsInTableView(self.tableView)
+        for section in 0..<sectionCount {
+            let rowCount = self.tableView(self.tableView, numberOfRowsInSection: section)
+            for row in 0..<rowCount {
+                let indexPath = NSIndexPath(forRow: row, inSection: section)
+                let cell = self.tableView(self.tableView, cellForRowAtIndexPath: indexPath)
+            }
+        }
+    }
+    */
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.selectedList.items.count
     }
